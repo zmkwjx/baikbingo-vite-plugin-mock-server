@@ -1,0 +1,49 @@
+{
+  "name": "baikbingo-vite-plugin-mock-server",
+  "version": "0.0.1",
+  "description": "基于vite&mock.js支持api截留模拟接口数据",
+  "main": "dist/cjs/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "baikbingo",
+    "mock",
+    "mock serve"
+  ],
+  "author": {
+    "name": "Zmkwjx",
+    "email": "zmkwjx@126.com"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.3",
+    "father": "^4.3.5",
+    "vite": "^4.4.11"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.19.4",
+    "fast-glob": "^3.3.1",
+    "mockjs": "^1.1.0",
+    "path-to-regexp": "^6.2.1",
+    "picocolors": "^1.0.0"
+  }
+}
