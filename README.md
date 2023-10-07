@@ -6,17 +6,23 @@
 ## Install
 
 ```bash
-$ yarn install
+$ npm i @baikbingo/vite-plugin-mock-server
 ```
 
 ```bash
-$ npm run dev
-$ npm run build
+import viteMockServer from '@baikbingo/vite-plugin-mock-server'
+
+export default defineConfig({
+  plugins: [
+    ...
+    viteMockServer({
+      mockPath: './src/mocks',
+      localEnabled: process.env.npm_lifecycle_event.includes('dev:mock'),
+    }),
+    ...
+  ]
+})
 ```
-
-## Options
-
-TODO
 
 ## LICENSE
 
