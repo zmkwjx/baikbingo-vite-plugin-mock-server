@@ -34,7 +34,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/node": "^20.8.3",
     "father": "^4.3.5",
     "vite": "^4.4.11"
   },
@@ -44,6 +43,7 @@
     "fast-glob": "^3.3.1",
     "mockjs": "^1.1.0",
     "path-to-regexp": "^6.2.1",
-    "picocolors": "^1.0.0"
+    "picocolors": "^1.0.0",
+    "url": "^0.11.3"
   }
 }
