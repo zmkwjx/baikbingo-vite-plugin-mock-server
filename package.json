@@ -1,5 +1,5 @@
 {
-  "name": "baikbingo-vite-plugin-mock-server",
+  "name": "@baikbingo/vite-plugin-mock-server",
   "version": "0.0.1",
   "description": "基于vite&mock.js支持api截留模拟接口数据",
   "main": "dist/cjs/index.js",
