@@ -19,7 +19,7 @@ import { createMockServer, requestMiddleware } from './createMockServer'
 /**
  * 安装插件
  */
-export default opt => {
+export function viteMockServe(opt) {
   let isDev = false
 
   return {
@@ -38,3 +38,5 @@ export default opt => {
     },
   }
 }
+
+export * from './hook'
