@@ -1,6 +1,6 @@
 {
   "name": "@baikbingo/vite-plugin-mock-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "基于vite&mock.js支持api截留模拟接口数据",
   "main": "dist/cjs/index.js",
   "scripts": {
@@ -11,8 +11,8 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
     }
   },
   "keywords": [
@@ -37,6 +37,7 @@
     "vite": "^4.4.11"
   },
   "dependencies": {
+    "@babel/runtime": "^7.23.1",
     "chokidar": "^3.5.3",
     "esbuild": "^0.19.4",
     "fast-glob": "^3.3.1",
