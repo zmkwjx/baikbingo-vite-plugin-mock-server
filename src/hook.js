@@ -77,7 +77,6 @@ export const useMock = () => {
   const api = opt => {
     const response = callback => {
       mockApis.push({
-        ...getOpt(opt),
         response: request => {
           try {
             const data = callback(request)
@@ -86,6 +85,7 @@ export const useMock = () => {
             return formatResponse.netwarn(e)
           }
         },
+        ...getOpt(opt),
       })
     }
     return {
